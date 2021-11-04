@@ -149,45 +149,111 @@
 // }
 
 // Setup
-const contacts = [
-    {
-        firstName: 'Akira',
-        lastName: 'Laine',
-        number: '0543236543',
-        likes: ['Pizza', 'Coding', 'Brownie Points'],
-    },
-    {
-        firstName: 'Harry',
-        lastName: 'Potter',
-        number: '0994372684',
-        likes: ['Hogwarts', 'Magic', 'Hagrid'],
-    },
-    {
-        firstName: 'Sherlock',
-        lastName: 'Holmes',
-        number: '0487345643',
-        likes: ['Intriguing Cases', 'Violin'],
-    },
-    {
-        firstName: 'Kristian',
-        lastName: 'Vos',
-        number: 'unknown',
-        likes: ['JavaScript', 'Gaming', 'Foxes'],
-    },
-];
+// const contacts = [
+//     {
+//         firstName: 'Akira',
+//         lastName: 'Laine',
+//         number: '0543236543',
+//         likes: ['Pizza', 'Coding', 'Brownie Points'],
+//     },
+//     {
+//         firstName: 'Harry',
+//         lastName: 'Potter',
+//         number: '0994372684',
+//         likes: ['Hogwarts', 'Magic', 'Hagrid'],
+//     },
+//     {
+//         firstName: 'Sherlock',
+//         lastName: 'Holmes',
+//         number: '0487345643',
+//         likes: ['Intriguing Cases', 'Violin'],
+//     },
+//     {
+//         firstName: 'Kristian',
+//         lastName: 'Vos',
+//         number: 'unknown',
+//         likes: ['JavaScript', 'Gaming', 'Foxes'],
+//     },
+// ];
 
-function lookUpProfile(name, prop) {
-    // Only change code below this line
-    for (let i = 0; i < contacts.length; i++) {
-        if (contacts[i].firstName === name) {
-            if (contacts[i].hasOwnProperty(prop)) {
-                return contacts[i][prop];
-            }
-            return 'No such property';
-        }
-    }
-    return 'No such contact';
-    // Only change code above this line
-}
+// function lookUpProfile(name, prop) {
+//     // Only change code below this line
+//     for (let i = 0; i < contacts.length; i++) {
+//         if (contacts[i].firstName === name) {
+//             if (contacts[i].hasOwnProperty(prop)) {
+//                 return contacts[i][prop];
+//             }
+//             return 'No such property';
+//         }
+//     }
+//     return 'No such contact';
+//     // Only change code above this line
+// }
 
-lookUpProfile('Akira', 'likes');
+// lookUpProfile('Akira', 'likes');
+
+// // generate random decimal number
+// fucntion randomFraction(){
+//     return Math.random();
+// }
+
+// genrate random whole number between 0 and 9
+// function randomWholeNum() {
+//     return Math.floor(Math.random() * 10);
+// }
+// function randomRange(myMin, myMax) {
+//     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+// }
+
+// function countdown(n) {
+//     if (n < 0) {
+//         console.log('Blastoff!');
+//     } else {
+//         console.log(n);
+//         countdown(n - 1);
+//     }
+// }
+
+// countdown(5);
+
+// use recursion to create a range of numbers
+// const rangeOfNumbers = (startNum, endNum) => {
+//     if (startNum === endNum) {
+//         return [startNum];
+//     }
+//     return [startNum, ...rangeOfNumbers(startNum + 1, endNum)];
+// };
+// function zeroArray(m, n) {
+//     // Creates a 2-D array with m rows and n columns of zeroes
+//     const newArray = [];
+//     const row = [];
+//     for (let i = 0; i < m; i++) {
+//         // Adds the m-th row into newArray
+
+//         for (let j = 0; j < n; j++) {
+//             // Pushes n zeroes into the current row to create the columns
+//             row.push(j);
+//         }
+//         // Pushes the current row, which now has n zeroes in it, to the array
+//         newArray.push(row);
+//     }
+//     return newArray;
+// }
+
+// const matrix = zeroArray(3, 2);
+// console.log(matrix);
+
+// // create a 2-D array with m rows and n columns of zeroes
+// function zeroArray(m, n) {
+//     const newArray = [];
+//     for (let i = 0; i < m; i++) {
+//         const row = [];
+//         for (let j = 0; j < n; j++) {
+//             row.push(0);
+//         }
+//         newArray.push(row);
+//     }
+//     return newArray;
+// }
+// const matrix = zeroArray(3, 2);
+// console.log(matrix);
