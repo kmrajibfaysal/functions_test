@@ -257,3 +257,25 @@
 // }
 // const matrix = zeroArray(3, 2);
 // console.log(matrix);
+
+// const EXPECTED_MINUTES_IN_OVEN = 40;
+
+// function remainingMinutesInOven(30) {
+//     return EXPECTED_MINUTES_IN_OVEN - 30;
+// }
+
+// function preparationTimeInMinutes(2)
+
+// check number of users are online
+// function countOnline(usersObj) {
+//     // Only change code below this line
+//     let count = 0;
+//     for (const user in usersObj) {
+//         if (usersObj[user].online) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+
